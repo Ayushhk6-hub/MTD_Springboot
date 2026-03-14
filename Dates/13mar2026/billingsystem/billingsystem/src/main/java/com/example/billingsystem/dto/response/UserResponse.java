@@ -1,0 +1,16 @@
+package com.example.billingsystem.dto.response;
+
+public class UserResponse {
+
+    private Long id;
+    private String name;
+
+    public UserResponse(Long id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
+    public Long getId() { return id; }
+
+    public String getName() { return name; }
+}

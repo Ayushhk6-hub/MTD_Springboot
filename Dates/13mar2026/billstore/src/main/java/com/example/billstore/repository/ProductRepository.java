@@ -1,0 +1,14 @@
+package com.example.billstore.repository;
+
+import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.example.billstore.entity.ProductsEntity;
+
+
+
+public interface ProductRepository extends JpaRepository<ProductsEntity, Long>{
+    // select * from product where bill_id = ?
+    List<ProductsEntity> findByBillId(Long billId);
+}
